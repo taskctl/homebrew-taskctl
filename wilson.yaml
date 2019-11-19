@@ -1,0 +1,15 @@
+pipelines:
+  release:
+    - task: download
+    - task: update-formula
+      depends_on: download
+
+tasks:
+  download:
+    command:
+      - wget -N https://github.com/trntv/wilson/releases/download/${ARGS}/wilson-darwin-amd64.tar.gz
+
+  update-formula:
+    command:
+      - sed -i '' '/Version:/s/".*"/"'${ARGS}'"/' cmd/cmd.go
+      - sed -i '' '/  sha256/s/".*"/"'$(shasum -a256 wilson-darwin-amd64.tar.gz | awk '{print $1}')'"/' wilson.rb
