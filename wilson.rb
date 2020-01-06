@@ -1,5 +1,5 @@
 class Wilson < Formula
-  version "0.3.6"
+  version "0.3.0"
   desc "Wilson - routine tasks automation toolkit"
   homepage "https://github.com/trntv/wilson"
   url "https://github.com/trntv/wilson/releases/download/#{version}/wilson-darwin-amd64.tar.gz"
