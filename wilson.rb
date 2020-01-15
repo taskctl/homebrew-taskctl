@@ -1,15 +1,24 @@
 class Wilson < Formula
-  version "0.3.1"
-  desc "Wilson - developer's routine tasks automation toolkit. Simple modern alternative to GNU Make 🧰"
+  desc "Developer's routine tasks automation toolkit"
   homepage "https://github.com/trntv/wilson"
-  url "https://github.com/trntv/wilson/releases/download/#{version}/wilson-darwin-amd64.tar.gz"
-  sha256 "5e428579afbc4005b3730d34f3166f8b27c738bade2e95c49ec465120c0c307a"
+  url "https://github.com/trntv/wilson/archive/0.3.1.tar.gz"
+  sha256 "96d6eaa8469657664294662c1c3eeb224c8793a3739967a3925fbc348afc44a9"
+  head "https://github.com/trntv/wilson.git"
 
+  depends_on "go" => :build
+  
   def install
-    bin.install "wilson_darwin_amd64" => "wilson"
+    system "go", "build", "-o", "#{bin}/#{name}", "github.com/trntv/wilson/cmd/wilson"
   end
 
   test do
     system "#{bin}/wilson", "--version"
+    
+    system "echo 'tasks:
+  test:
+    command:
+      - echo ok' > test.yml"
+    output = shell_output("#{bin}/wilson -c test.yml run task test", 0)
+    assert_match "ok", output
   end
 end
