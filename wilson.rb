@@ -1,9 +1,9 @@
 class Wilson < Formula
-  version "0.3.1"
+  version "0.4.0"
   desc "Wilson - developer's routine tasks automation toolkit. Simple modern alternative to GNU Make 🧰"
   homepage "https://github.com/trntv/wilson"
   url "https://github.com/trntv/wilson/releases/download/#{version}/wilson-darwin-amd64.tar.gz"
-  sha256 "5e428579afbc4005b3730d34f3166f8b27c738bade2e95c49ec465120c0c307a"
+  sha256 "4974b0850067eb370c0aa25c89e4f02da062c0009f43e5e72455b7ea2a5e6080"
 
   def install
     bin.install "wilson_darwin_amd64" => "wilson"
