@@ -1,5 +1,5 @@
 class Taskctl < Formula
-  version "0.6.0"
+  version "0.6.1"
   desc "taskctl - developer's routine tasks automation toolkit. Simple modern alternative to GNU Make 🧰"
   homepage "https://github.com/taskctl/taskctl"
   url "https://github.com/taskctl/taskctl/releases/download/#{version}/taskctl-darwin-amd64.tar.gz"
