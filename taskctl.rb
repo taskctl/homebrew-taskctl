@@ -3,7 +3,7 @@ class Taskctl < Formula
   desc "taskctl - developer's routine tasks automation toolkit. Simple modern alternative to GNU Make 🧰"
   homepage "https://github.com/taskctl/taskctl"
   url "https://github.com/taskctl/taskctl/releases/download/#{version}/taskctl-darwin-amd64.tar.gz"
-  sha256 "97f379f3cea27457188294a941b1df980aa2b8af203a179c2fa42cc96334a7ed"
+  sha256 "9aac8cbfe9ed5e288857f18c42666a4c7799f3e672edfe72541640c5933afb1c"
 
   def install
     bin.install "taskctl_darwin_amd64" => "taskctl"
