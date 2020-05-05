@@ -2,16 +2,16 @@
 class Taskctl < Formula
   desc ""
   homepage "https://github.com/taskctl/taskctl"
-  version "1.1.0-alpha-4"
+  version "1.0.0-beta-1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/taskctl/taskctl/releases/download/1.1.0-alpha-4/taskctl_1.1.0-alpha-4_darwin_amd64.tar.gz"
-    sha256 "91f50d21ceb234c4fa29f17c680e9032168d7c7e8a36ccc28bf4374546a88577"
+    url "https://github.com/taskctl/taskctl/releases/download/1.0.0-beta-1/taskctl_1.0.0-beta-1_darwin_amd64.tar.gz"
+    sha256 "c92d5cc1b8c7f6a95d8d7444d4c3078510ee77bc9d2ebef3dc271c4331622930"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/taskctl/taskctl/releases/download/1.1.0-alpha-4/taskctl_1.1.0-alpha-4_linux_amd64.tar.gz"
-      sha256 "a3bf7ff9f6f310ad8d2965a5640cdbcc78af5cfa61200e3937ca62f5d2edaa77"
+      url "https://github.com/taskctl/taskctl/releases/download/1.0.0-beta-1/taskctl_1.0.0-beta-1_linux_amd64.tar.gz"
+      sha256 "29c7515faa8bbe3977a685663b2e30becc80d135d2facbc7bb5f793ebe4771c4"
     end
   end
 
