@@ -7,17 +7,17 @@ class Taskctl < Formula
 
   if OS.mac?
     url "https://github.com/taskctl/taskctl/releases/download/1.0.4/taskctl_1.0.4_darwin_amd64.tar.gz"
-    sha256 "cec155c4753b3be2e3bb0f47284922530f54dd86e60710841169f6857485951d"
+    sha256 "821bc44387689f92711ce48184ebfc5b71cb39c654638f0038c2bdddf5ed4498"
   elsif OS.linux?
     if Hardware::CPU.intel?
       url "https://github.com/taskctl/taskctl/releases/download/1.0.4/taskctl_1.0.4_linux_amd64.tar.gz"
-      sha256 "ac126298a814bc30462d70badebcb9f8449e0cbb4f8d35d9d161e726e0792dcc"
+      sha256 "7e0ec90c35e7c3a3570352118d14427a6b94718a057de895ad2592bfbe53df6d"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
       else
         url "https://github.com/taskctl/taskctl/releases/download/1.0.4/taskctl_1.0.4_linux_armv6.tar.gz"
-        sha256 "6fb918570da68c6920cee66e757a2e866eac4ff39a8dceb5279b66a402006f98"
+        sha256 "9f798cfb4d84d22defb8412166f4c6e291b7b6bd9c42748660b6f6f9c6593939"
       end
     end
   end
