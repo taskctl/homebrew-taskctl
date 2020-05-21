@@ -2,22 +2,22 @@
 class Taskctl < Formula
   desc ""
   homepage "https://github.com/taskctl/taskctl"
-  version "1.0.0-rc3"
+  version "1.0.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/taskctl/taskctl/releases/download/1.0.0-rc3/taskctl_1.0.0-rc3_darwin_amd64.tar.gz"
-    sha256 "607de35f35ebb6973267caad940a3a265c306ff7b52919e3c5093c44bc74d400"
+    url "https://github.com/taskctl/taskctl/releases/download/1.0.4/taskctl_1.0.4_darwin_amd64.tar.gz"
+    sha256 "4d9915a30db7a6847c2403d7b6bba09db2cc88035c4b462844aeb42018b9726c"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/taskctl/taskctl/releases/download/1.0.0-rc3/taskctl_1.0.0-rc3_linux_amd64.tar.gz"
-      sha256 "63dbbb6a7e6a27959836fa9b45a0213ac1c22215a914ecaff62e5980777f019f"
+      url "https://github.com/taskctl/taskctl/releases/download/1.0.4/taskctl_1.0.4_linux_amd64.tar.gz"
+      sha256 "7ea5f455ee3612b7c22582099882e6cd219b920758ae843e6433159494856648"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
       else
-        url "https://github.com/taskctl/taskctl/releases/download/1.0.0-rc3/taskctl_1.0.0-rc3_linux_armv6.tar.gz"
-        sha256 "7fb81ffb8cc4499fa25b1000eeddd5f5f5baee14843a51f16310a187d37abb0c"
+        url "https://github.com/taskctl/taskctl/releases/download/1.0.4/taskctl_1.0.4_linux_armv6.tar.gz"
+        sha256 "3945b02127ce92c10d145765f73623224aa93c4cd0e9ae8f539ffd90a3980d41"
       end
     end
   end
