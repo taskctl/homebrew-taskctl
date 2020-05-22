@@ -23,7 +23,7 @@ class Taskctl < Formula
   end
 
   def install
-    bin.install "program"
+    bin.install "taskctl"
     bash_completion.install "autocomplete/bash_completion.bash"
     zsh_completion.install "autocomplete/zsh_completion.zsh"
   end
