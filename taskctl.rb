@@ -2,20 +2,20 @@
 class Taskctl < Formula
   desc ""
   homepage "https://github.com/taskctl/taskctl"
-  version "1.4.0"
+  version "1.4.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/taskctl/taskctl/releases/download/1.4.0/taskctl_1.4.0_darwin_amd64.tar.gz"
-    sha256 "a759a1cbfa3be3fb691c055b67fe33c17909636c5f0e747acb95d5f2344e75b3"
+    url "https://github.com/taskctl/taskctl/releases/download/1.4.1/taskctl_1.4.1_darwin_amd64.tar.gz"
+    sha256 "36c166b02ef07e765eff65a706fc4321b4e47df08724db56e76b8ebada6410e9"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/taskctl/taskctl/releases/download/1.4.0/taskctl_1.4.0_linux_amd64.tar.gz"
-    sha256 "00fa84a68d9f927e54ea35e821f78e00dbc3b1d509463af99b65a9cd3099f2ca"
+    url "https://github.com/taskctl/taskctl/releases/download/1.4.1/taskctl_1.4.1_linux_amd64.tar.gz"
+    sha256 "ed56adcfa02a7aab67b5499209f62efbc0822964fc7c38c605c4332b61125a98"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "https://github.com/taskctl/taskctl/releases/download/1.4.0/taskctl_1.4.0_linux_armv6.tar.gz"
-    sha256 "3be8a51504a5ea1e40043c37a81fb900fe0cda152796f6e57399cddcae46abff"
+    url "https://github.com/taskctl/taskctl/releases/download/1.4.1/taskctl_1.4.1_linux_armv6.tar.gz"
+    sha256 "42121cc24c96cedabacfef9f334ed23f54dacb3ec69fbf00645f8f82bf37f982"
   end
 
   def install
